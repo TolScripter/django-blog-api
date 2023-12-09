@@ -1,4 +1,5 @@
 ##Description => Django Blog API
+
 ####Fonctionnalités: 
 * Authentification basé sur le Json Web Token (JWT)
 * CRUD pour les articles
