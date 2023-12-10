@@ -18,24 +18,24 @@
 - GET/DELETE/PUT 'user/details/<int:id>', Read/Delete/Update User account (Authentification Required)
 
 #tags routes
-- POST/GET 'blog/tag/' {title, code, description} => Create New Tag OR Get All Tags
+- POST/GET 'blog/tags/' {title, code, description} => Create New Tag OR Get All Tags
 - GET/DELETE/PUT' blog/tag/details/<int:id>' => Read/Delete/Update Tag details (Authentification Required)
 
 #categories routes
-- POST/GET 'blog/category/'
+- POST/GET 'blog/categories/'
 - GET/DELETE/PUT 'blog/category/details/<int:id>'
 
 #posts routes
-- POST/GET 'blog/post/'
+- POST/GET 'blog/posts/'
 - GET/DELETE/PUT 'blog/post/details/<int:id>'
 
 #likes routes
-- POST/GET 'post/like/'
+- POST/GET 'post/likes/'
 - GET/DELETE/PUT 'post/like/details/<int:id>'
 
 #views routes
-- POST/GET 'post/view/' 
+- POST/GET 'post/views/' 
 
 #collections routes
-- POST/GET 'post/collection/'
+- POST/GET 'post/collections/'
 - GET/DELETE/PUT 'post/collection/details/<int:id>'

@@ -8,15 +8,11 @@ class Tag(models.Model):
     at = models.DateTimeField(auto_now=True)
 
 
-    def __str__(self) -> str:
-        return self.code
     
 class Category(models.Model):
     name = models.CharField(max_length=255)
     at = models.DateTimeField(auto_now=True)
 
-    def __str__(self) -> str:
-        return self.name
     
 
 class Post(models.Model):
@@ -27,31 +23,20 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag)
     at = models.DateTimeField(auto_now=True)
     
-    def __str__(self) -> str:
-        return self.title
     
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     at = models.DateTimeField(auto_now=True)
 
-    def __str__(self) -> str:
-        return self.at
-    
 
 class View(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     at = models.DateTimeField(auto_now=True)
 
-    def __str__(self) -> str:
-        return self.at
-
 
 class Collection(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     at = models.DateTimeField(auto_now=True)
-
-    def __str__(self) -> str:
-        return self.at
