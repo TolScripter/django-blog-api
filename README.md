@@ -1,4 +1,5 @@
 ##Description => Django Blog API
+
 ####Fonctionnalités: 
 * Authentification basé sur le Json Web Token (JWT)
 * CRUD pour les articles
@@ -37,5 +38,10 @@
 - POST/GET 'post/views/' 
 
 #collections routes
+<<<<<<< HEAD
 - POST/GET 'post/collections/'
 - GET/DELETE/PUT 'post/collection/details/<int:id>'
+=======
+- POST/GET 'post/collection/'
+- GET/DELETE/PUT 'post/collection/details/<int:id>'
+>>>>>>> b72c0c978029aa80d8f454c8c0125e3318f7756b
